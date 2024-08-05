@@ -411,52 +411,139 @@ public:
                 rus << "Вы получили |cffffff4d2500|cffff9933 очков арены.";
                 eng << "You got |cffffff4d2500|cffff9933 arena points.";
                 break;              
-            case 2 ... 5:                                // 4% - 250к очков чести
+            case 2:
+            case 3:
+            case 4: // 4% - 250к очков чести
                 pPlayer->ModifyHonorPoints(250000);
                 rus << "Вы получили |cffffff4d250 000|cffff9933 очков чести.";
                 eng << "You got |cffffff4d250 000|cffff9933 honor points.";      
                 break;      
-            case 6 ... 10:                               // 5% - 10 бонусов 
+            case 6:
+            case 7:
+            case 8:
+            case 9:
+            case 10:// 5% - 10 бонусов 
                 pPlayer->AddItem(38570, 10);
                 rus << "Вы получили |cffffff4d10|cffff9933 бонусов.";
                 eng << "You got |cffffff4d10|cffff9933 bonuses."; 
                 break;   
-            case 11 ... 20:                              // 10% - забирает 50к очков чести
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+            case 15:
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+            case 20:// 10% - забирает 50к очков чести
                 pPlayer->ModifyHonorPoints(-50000);
                 rus << "Вы проеб@ли |cffffff4d50 000|cffff9933 очков чести.";
                 eng << "You fucked up |cffffff4d50 000|cffff9933 honor points."; 
                 break;     
-            case 21 ... 30:                              // 10% - 100 Осколоков каменного хранителя
+            case 21:
+            case 22:
+            case 23:
+            case 24:
+            case 25:
+            case 26:
+            case 27:
+            case 28:
+            case 29:
+            case 30:// 10% - 100 Осколоков каменного хранителя
                 pPlayer->AddItem(43228, 100);
                 rus << "Вы получили |cffffff4d100|cffff9933 осколоков каменного хранителя.";
                 eng << "You got |cffffff4d100|cffff9933 stone keeper's shard.";  
                 break;           
-            case 31 ... 50:                              // 20% - Просто убивает вас (русская рулетка же)
+            case 31:
+            case 32:
+            case 33:
+            case 34:
+            case 35:
+            case 36:
+            case 37:
+            case 38:
+            case 39:
+            case 40:
+            case 41:
+            case 42:
+            case 43:
+            case 44:
+            case 45:
+            case 46:
+            case 47:
+            case 48:
+            case 49:
+            case 50:// 20% - Просто убивает вас (русская рулетка же)
                 pPlayer->CastSpell(pPlayer, 74090, false); 
                 rus << "Вы получили |cffffff4dп#зды|cffff9933.";
                 eng << "You got |cffffff4dcunts|cffff9933.";
                 break;              
-            case 51 ... 52:                              // 2% - 3 жетона русской рулетки
+            case 51:
+            case 52:// 2% - 3 жетона русской рулетки
                 pPlayer->AddItem(52361, 3);
                 rus << "Вы получили |cffffff4d3|cffff9933 жетона русской рулетки.";
                 eng << "You got |cffffff4d3|cffff9933 russian roulette tokens.";   
                 break;             
-            case 53 ... 60:                              // 9% - забирает 50 очков арены
+            case 53:
+            case 54:
+            case 55:
+            case 56:
+            case 57:
+            case 58:
+            case 59:
+            case 60:// 9% - забирает 50 очков арены
                 pPlayer->ModifyArenaPoints(-50);
                 rus << "Вы потеряли |cffffff4d50|cffff9933 очков арены.";
                 eng << "You lost |cffffff4d50|cffff9933 arena points.";    
                 break;         
-            case 61 ... 90:                              // 30% - 2 слитка по 250 опыта для ранга
+            case 61:
+            case 62:
+            case 63:
+            case 64:
+            case 65:
+            case 66:
+            case 67:
+            case 68:
+            case 69:
+            case 70:
+            case 71:
+            case 72:
+            case 73:
+            case 74:
+            case 75:
+            case 76:
+            case 77:
+            case 78:
+            case 79:
+            case 80:
+            case 81:
+            case 82:
+            case 83:
+            case 84:
+            case 85:
+            case 86:
+            case 87:
+            case 88:
+            case 89:
+            case 90:// 30% - 2 слитка по 250 опыта для ранга
                 pPlayer->AddItem(1044, 2); 
                 rus << "Вы получили |cffffff4d2|cffff9933 слитка по 250 опыта для ранга.";
                 eng << "You got |cffffff4d2|cffff9933 250 xp ingot per rank."; 
                 break;
-            case 91 ... 95:                              // 5% - Премиум аккаунт на 1 день
+            case 91:
+            case 92:
+            case 93:
+            case 94:
+            case 95:// 5% - Премиум аккаунт на 1 день
                 pPlayer->AddItem(34631, 1);
                 rus << "Вы получили |cffffff4d1|cffff9933 премиум аккаунт на 1 день.";
                 eng << "You got |cffffff4d1|cffff9933 premium account for 1 day.";
                 break;
-            case 96 ... 99:                              // 4% - 10 слитков по 1к опыта для ранга
+            case 96:
+            case 97:
+            case 98:
+            case 99:// 4% - 10 слитков по 1к опыта для ранга
                 pPlayer->AddItem(35778, 10); 
                 rus << "Вы получили |cffffff4d10|cffff9933 слитка по 1 000 опыта для ранга.";
                 eng << "You got |cffffff4d10|cffff9933 1000 xp ingot per rank.";
